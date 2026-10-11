@@ -34,8 +34,6 @@ static const char term_name[] = "vt100";
 /* AARRGGBB */
 static const uint32_t default_fg = 0xffffffff;
 static const uint32_t default_bg = 0xff000000;
-static const uint32_t cursor_fg  = 0xff000000;
-static const uint32_t cursor_bg  = 0xffffffff;
 
 static const uint32_t color_table[16] = {
 	0xff000000, /* black */

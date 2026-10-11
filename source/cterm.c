@@ -354,8 +354,9 @@ static void run(void)
 				uint32_t bg = reverse ? r->fg : r->bg;
 
 				if (cursor) {
-					fg = cursor_fg;
-					bg = cursor_bg;
+					uint32_t tmp = fg;
+					fg = bg;
+					bg = tmp;
 				}
 
 				if (!r->dmg)
