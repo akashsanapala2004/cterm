@@ -6,7 +6,7 @@
 
 /* perror `msg` and exit program with `ec`
    TODO? stdarg */
-void die(int ec, const char* msg,...)
+void die(int ec, const char* msg, ...)
 {
 	va_list args;
 	va_start(args, msg);
